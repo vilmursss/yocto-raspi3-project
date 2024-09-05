@@ -1,0 +1,18 @@
+#!/bin/sh
+
+case "$1" in
+start)
+    echo "Loading LED Control device module"
+    modprobe led-control
+    ;;
+stop)
+    echo "Unloading LED Control device module"
+    sudo rmmmod led-control
+    ;;
+*)
+    echo "Usage: $0 {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
