@@ -9,7 +9,7 @@ SRC_URI = "git://github.com/vilmursss/led-control-device-driver.git;protocol=ssh
 
 PV = "1.0+git${SRCPV}"
 
-SRCREV = "1665c41f0d85ab1f1c8e0377a637443ccea607cb"
+SRCREV = "dc38c6d8b44479a72789934cffbaef949d91bd47"
 
 S = "${WORKDIR}/git"
 
